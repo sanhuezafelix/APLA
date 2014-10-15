@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="110dip"
+
+        android:layout_marginTop="15dip"
+
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/card_background"
+        >
+        <TextView
+            android:id="@+id/DateCell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="13dip"
+           android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/card_title_backgroud"
+            android:text="05-03-2014"
+            />
+
+
+
+    <RelativeLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DateCell"
+        >
+
+        <LinearLayout android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="5dip">
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/TextContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#343434"
+            android:typeface="sans"
+            android:textSize="14dip"
+            android:textStyle="bold"
+            android:paddingTop="10dip"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:gravity="left"
+            android:text="I Congreso Internacional de Cirugia"
+           />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="5dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginBottom="10dp"
+        android:text="@string/dialog_tochat"
+        android:textSize="18dp"
+        android:layout_marginTop="7dp" />
+    <Button
+        android:id="@+id/add_chat"
+        android:layout_width="80dip"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/add_Group"
+        android:textSize="12dip"
+
+        android:background="@drawable/popover_btn_background"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentTop="true"
+        android:paddingTop="7dp" />
+
+    <ListView
+        android:id="@+id/roomsList"
+        android:layout_below="@+id/add_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

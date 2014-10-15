@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_padre"
+
+        android:background="@drawable/card_background_extras"
+        >
+        <TextView
+            android:id="@+id/titulo_acomp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#343434"
+            android:typeface="sans"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:paddingLeft="32dip"
+
+            android:paddingTop="15dip"
+            android:paddingBottom="15dip"
+            android:gravity="left"
+            android:text="I Congreso Internacional de Cirugia"
+            />
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>

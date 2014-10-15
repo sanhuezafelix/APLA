@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/fondo_hotel"
+        android:src="@drawable/hotel_background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:layout_below="@+id/imageView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+
+            <TextView
+                android:id="@+id/lugar_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel2"
+                android:textSize="15dip"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dip"
+                android:layout_below="@+id/direccion_hotel" />
+
+            <TextView
+                android:id="@+id/content_descripcion_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel3"
+                android:textSize="15dip"
+                android:padding="5dip"
+                android:layout_below="@+id/web_hotel" />
+
+            <TextView
+                android:id="@+id/telefono_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel4"
+                android:textSize="15dip"
+                android:layout_below="@+id/lugar_hotel"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp" />
+
+            <TextView
+                android:id="@+id/web_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel5"
+                android:textSize="15dip"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/telefono_hotel"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="3dp" />
+
+            <TextView
+                android:id="@+id/direccion_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel6"
+                android:textSize="15dip"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dip"
+                android:layout_alignParentEnd="true"
+                android:paddingBottom="3dp" />
+
+            <Utils.mMapImageView
+                android:id="@+id/map_hotel"
+                android:layout_width="250dp"
+                android:layout_height="311dp"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/content_descripcion_hotel"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/icono_direccion"
+                android:layout_toRightOf="@+id/direccion_hotel" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/icono_fono"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toRightOf="@+id/telefono_hotel"
+                android:layout_alignTop="@+id/telefono_hotel" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView4"
+                android:background="@drawable/icono_web"
+                android:layout_toStartOf="@+id/map_hotel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/imageView3"
+                android:layout_alignTop="@+id/web_hotel"
+                android:layout_toRightOf="@+id/web_hotel" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fondo_hotel"
+        android:layout_marginTop="-20dp"
+        android:clickable="true"
+        android:background="@drawable/cosaazul" />
+
+    <TextView
+        android:id="@+id/nombre_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/hotel"
+        android:textSize="17dip"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="12dp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

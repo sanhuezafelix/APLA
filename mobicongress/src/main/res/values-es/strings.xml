@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">APLA 2014</string>
+    <string name="title_congress">34ª Reunión Anual Latinoamericana de Petroquímica</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="Now">Ahora</string>
+    <string name="Schedule">Programa</string>
+    <string name="Speaker">Oradores</string>
+    <string name="Maps">Espacios de reunión</string>
+    <string name="Stand">Stand</string>
+    <string name="News">Novedades</string>
+    <string name="Hotels">Hoteles</string>
+    <string name="Summary_Book">Info general</string>
+    <string name="Accompanist">Programa de Acompañantes</string>
+    <string name="Favorites">Favoritos</string>
+    <string name="Note_pad">Notas</string>
+    <string name="Poster">Info general</string>
+    <string name="Download">ContenidoDescarga</string>
+    <string name="Sponsor">Contribuyentes</string>
+    <string name="idioma">es</string>
+    <string name="UserList">Lista de Usuarios</string>
+    <string name="eem">En este Momento</string>
+    <string name="nextact">Proximas Actividades</string>
+    <string name="chat">Chat</string>
+    <string name="login">Iniciar Sesión</string>
+
+    <string name="Lunes">Lunes</string>
+    <string name="Martes">Martes</string>
+    <string name="Miercoles">Miércoles</string>
+    <string name="Jueves">Jueves</string>
+    <string name="Viernes">Viernes</string>
+    <string name="Sabado">Sábado</string>
+    <string name="Domingo">Domingo</string>
+
+    <string name="Rate">Evaluar</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="send">Enviar</string>
+    <string name="yo">Yo</string>
+    <string name="add_Group">Nuevo grupo</string>
+    <string name="event">Evento</string>
+    <string name="content">Contenido</string>
+
+    <string name="dialog_tochat">Seleccione un diálogo</string>
+    <string name="name_dialog">Ingrese nombre del grupo.</string>
+    <string name="user_tochat">Seleccione un usuario </string>
+    <string name="chat_Group">Mensajes Grupales</string>
+    <string name="private_Chat">Mensajes Privados</string>
+    <string name="search">Búsqueda</string>
+    <string name="finish">Evento terminado</string>
+    <string name="rate_send">Enviado</string>
+    <string name="alarm">Listo</string>
+    <string name="from">De</string>
+    <string name="to">hasta</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="moderator">Moderador</string>
+    <string name="tematic">Temática</string>
+
+    <string name="back">Presiona de nuevo para cerrar la aplicación</string>
+    <string name="fields">Por favor llene todos los campos requeridos</string>
+    <string name="conversation">Conversación con</string>
+    <string name="members">Integrantes</string>
+    <string name="select">Seleccionar al menos dos usuarios</string>
+    <string name="privado">Privado</string>
+    <string name="Conversacion_grupal">Conversación Grupal</string>
+    <string name="Conversacion_privada">Conversación Privada</string>
+    <string name="join1">Te has unido a la conversación</string>
+    <string name="join2">Aún te estas uniendo a un chat grupal, espera un momento</string>
+    <string name="join3">No te has podido unir a la conversación</string>
+         <string name="conection_string">Error de Conexion
+ En este momento en su dispositivo no existen conexiones  a datos  moviles disponibles.
+  Intentelo otra vez mas tarde</string>
+    <string name="hotel">Nombre hotel</string>
+    <string name="hotel2">Lugar hotel</string>
+    <string name="hotel3">Descripción</string>
+    <string name="hotel4">Teléfono hotel</string>
+    <string name="hotel5">Web</string>
+    <string name="hotel6">Dirección hotel</string>
+    <string name="noconection">No hay conexión</string>
+    <string name="close">Cerrar</string>
+    <string name="roomname">Nombre sala</string>
+    <string name="last_msg">Ultimo mensaje</string>
+    <string name="unread_msg">Mensaje sin leer</string>
+    <string name="unread_msgs">Mensajes sin leer</string>
+    <string name="create">Crear Chat</string>
+
+
+</resources>

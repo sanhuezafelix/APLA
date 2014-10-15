@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">APLA 2014</string>
+    <string name="title_congress">34th Latin American Petrochemical Annual Meeting</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Now">Now</string>
+    <string name="Schedule">Program</string>
+    <string name="Speaker">Speakers</string>
+    <string name="Maps">Meeting rooms</string>
+    <string name="News">News</string>
+    <string name="Hotels">Hotels</string>
+    <string name="Summary_Book">General info</string>
+    <string name="Accompanist">Accompanying program</string>
+    <string name="Favorites">Favorites</string>
+    <string name="Note_pad">Notes</string>
+    <string name="Poster">General info</string>
+    <string name="Download">Download Contents</string>
+    <string name="Sponsor">Supporters</string>
+    <string name="Stand">Stand</string>
+    <string name="idioma">en</string>
+    <string name="chat">Chat</string>
+    <string name="login">Log In</string>
+    <string name="UserList">Users List</string>
+    <string name="eem">In This Moment</string>
+    <string name="nextact">Next Activities</string>
+
+    <string name="dialog_tochat">Select a dialog to Chat</string>
+    <string name="user_tochat">Select a user to Chat</string>
+    <string name="name_dialog">Input dialog name</string>
+    <string name="send">Send</string>
+    <string name="yo">Me</string>
+    <string name="add_Group">New group</string>
+    <string name="chat_Group">Group Chat</string>
+    <string name="private_Chat">Private Chat</string>
+    <string name="search">Search</string>
+    <string name="create">Create Chat</string>
+
+    <!-- dias de la semana -->
+    <string name="Lunes">Monday</string>
+    <string name="Martes">Tuesday</string>
+    <string name="Miercoles">Wednesday</string>
+    <string name="Jueves">Thursday</string>
+    <string name="Viernes">Friday</string>
+    <string name="Sabado">Saturday</string>
+    <string name="Domingo">Sunday</string>
+
+    <!-- rate -->
+    <string name="Rate">Rate</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="event">Event</string>
+
+    <string name="finish">This event is already finish</string>
+    <string name="rate_send">Rate send</string>
+    <string name="alarm">Done</string>
+    <string name="from">From</string>
+    <string name="to">to</string>
+    <string name="content">Content</string>
+    <string name="moderator">Moderator</string>
+    <string name="tematic">Topic</string>
+    <string name="back">Press back again to close this app</string>
+    <string name="fields">Please fill in all of the required fields</string>
+    <string name="conversation">Conversation with</string>
+    <string name="members">Members</string>
+    <string name="select">Select at least two users</string>
+    <string name="privado">Private</string>
+    <string name="Conversacion_grupal">Group Conversation</string>
+    <string name="Conversacion_privada">Private Conversation</string>
+    <string name="join1">Join successful</string>
+    <string name="join2">You are still joining a group chat, please white a bit</string>
+    <string name="join3">Join unsuccessful</string>
+       <string name="conection_string">Connection Error
+  At present there are no data <string name="hotel">Hotel name</string>
+    <string name="hotel2">Hotel place</string>
+    <string name="hotel3">Description</string>
+    <string name="hotel4">Hotel phone</string>
+    <string name="hotel5">Web</string>
+    <string name="hotel6">Hotel address</string>
+    <string name="noconection">No connection</string>
+    <string name="close">Close</string>available connections on your mobile device.
+   Try again later</string>
+    <string name="roomname">Room name</string>
+    <string name="last_msg">Last message</string>
+    <string name="unread_msg">Unread message</string>
+    <string name="unread_msgs">Unread messages</string>
+
+
+
+
+
+
+</resources>

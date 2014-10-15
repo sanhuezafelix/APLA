@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle"
+            android:dither="true">
+
+
+            <corners android:radius="4dp"/>
+
+
+            <solid android:color="#859aa5" />
+
+        </shape>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="-45"
+            android:toDegrees="-45"
+            android:pivotX="-40%"
+            android:pivotY="87%" >
+            <shape
+                android:shape="rectangle" >
+                <stroke android:color="@color/gray" android:width="10dp"/>
+                <solid
+                    android:color="@color/gray" />
+            </shape>
+        </rotate>
+    </item>
+
+
+    </layer-list><!-- From: file:/Users/luisgonzalez/Downloads/mCongress/IPVS/src/main/res/drawable/card_background.xml -->

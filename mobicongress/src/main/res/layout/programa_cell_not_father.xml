@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_padre"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/card_background_border"
+            >
+
+            <RelativeLayout android:id="@+id/content_hora_prg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:layout_alignParentLeft="true"
+
+                android:gravity="center_vertical"
+                android:layout_marginRight="5dip">
+
+                <TextView
+                    android:id="@+id/inicio_prg"
+                    android:layout_width="40dip"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center"
+                    android:text="12:00"
+
+                    />
+                <TextView
+                    android:id="@+id/fin_prg"
+                    android:layout_width="40dip"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center"
+                    android:text="12:00"
+                    android:layout_below="@+id/inicio_prg"
+
+                    />
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/speaker_prg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/content_hora_prg"
+                android:layout_below="@+id/titulo_nieto"
+                android:gravity="left"
+                android:textSize="15dip"
+                android:paddingTop="10dip"
+                android:textStyle="bold"
+                android:paddingBottom="5dip"
+                android:text="Dr. juanito Rose"/>
+            <TextView
+                android:id="@+id/lugar_pgr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/content_hora_prg"
+                android:layout_below="@+id/speaker_eem"
+                android:gravity="left"
+                android:textSize="12dip"
+                android:paddingBottom="5dip"
+                android:text="Salon Bombal"/>
+
+        </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

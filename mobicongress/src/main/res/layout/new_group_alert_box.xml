@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:background="@android:color/transparent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:background="@drawable/popover_background">
+        <TextView
+            android:id="@+id/contenido_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese nombre del grupo"
+            android:textSize="20dip"
+            android:layout_margin="20dip"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/name_group"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/contenido_box"
+            android:layout_margin="20dip"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dip"
+            android:layout_below="@+id/name_group" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentTop="true"
+                android:background="@color/gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentLeft="true"
+                android:background="@color/gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentRight="true"
+                android:background="@color/gray" />
+
+            <View
+                android:id="@+id/ViewColorPickerHelper"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray" />
+            <View
+
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@color/gray" />
+            <View
+
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/Cancel_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="1dip"
+                android:layout_toLeftOf="@id/ViewColorPickerHelper"
+                android:background="@android:color/white"
+                android:text="@android:string/cancel" />
+
+            <Button
+                android:id="@+id/OK_group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="1dip"
+                android:layout_toRightOf="@id/ViewColorPickerHelper"
+                android:background="@android:color/white"
+                android:text="@android:string/ok" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>s
+</RelativeLayout>

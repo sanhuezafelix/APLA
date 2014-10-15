@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:id="@+id/container_social"
+    >
+  <RelativeLayout
+      android:id="@+id/content_image_bacground"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dip">
+      <ImageView
+          android:id="@+id/image_background"
+          android:layout_width="match_parent"
+          android:layout_height="140dip"
+
+          android:scaleType="fitXY"/>
+      <TextView
+          android:layout_below="@+id/image_background"
+          android:layout_width="match_parent"
+          android:layout_height="20dip"
+          android:background="@color/evento_unico_background"/>
+
+  </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_image_bacground"
+        android:layout_marginBottom="20dip">
+        <RelativeLayout
+
+            android:layout_margin="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dip"
+            android:layout_marginBottom="10dip"
+
+
+
+            >
+            <TextView
+                android:id="@+id/Titulo_social_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del hotel"
+                android:textSize="15dip"
+                android:padding="5dip"/>
+            <TextView
+                android:id="@+id/fecha_social_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textSize="15dip"
+                android:padding="5dip"
+
+
+                android:layout_below="@id/Titulo_social_event"/>
+            <TextView
+                android:id="@+id/hora_social_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora"
+                android:textSize="15dip"
+                android:padding="5dip"
+                android:gravity="left"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/fecha_social_event"/>
+            <TextView
+                android:id="@+id/lugar_social_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lugar"
+                android:textSize="15dip"
+                android:padding="5dip"
+                android:gravity="left"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/hora_social_event"/>
+            <TextView
+                android:id="@+id/descripcion_social_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drescripcion"
+                android:textSize="15dip"
+                android:padding="5dip"
+                android:gravity="left"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/lugar_social_event"/>
+        </RelativeLayout>
+        </ScrollView>
+
+
+
+</RelativeLayout>

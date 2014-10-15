@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dip">
+
+<TextView
+    android:id="@+id/label_fav"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="jueves 3"
+    android:textSize="18dip"
+    android:textColor="#fff"
+    android:gravity="center"
+    android:background="@drawable/label_days_program"
+    />
+</RelativeLayout>

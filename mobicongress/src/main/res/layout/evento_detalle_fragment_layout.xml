@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:background="#dd9580">
+
+    <TextView
+        android:id="@+id/detalle_titulo_padre"
+        android:layout_toLeftOf="@+id/ir_modulo_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modulo:modulo1"
+        android:layout_margin="5dip"
+        android:textSize="20dip"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+    <ImageButton
+        android:id="@+id/ir_modulo_evento"
+        android:layout_width="40dip"
+        android:layout_height="30dip"
+        android:layout_toLeftOf="@+id/texto_fijo"
+        android:src="@drawable/ir_modulo"
+        android:background="@null"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/texto_fijo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+
+        android:gravity="center"
+
+        android:text="Modulo "
+        android:visibility="gone"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/detalle_titulo_padre"
+        android:paddingBottom="5dip">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+
+
+            android:background="@drawable/card_background_border"
+            android:layout_margin="5dip"
+            android:minHeight="200dip">
+
+
+            <TextView
+                android:id="@+id/detalle_titulo_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenida"
+                android:layout_margin="5dip"
+                android:layout_toLeftOf="@+id/favorito_evento"
+                android:textSize="17dip"
+                android:textStyle="bold"/>
+            <ImageButton
+                android:id="@+id/favorito_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_fav_0"
+                android:layout_margin="5dip"
+                android:background="@null"
+                />
+            <ImageButton
+                android:id="@+id/btn_notepad"
+                android:layout_below="@+id/favorito_evento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/divider"
+                android:textColor="@color/blue"
+                android:layout_margin="5dip"
+                android:src="@drawable/boton_notas_activo"
+                android:background="@null"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btn_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_below="@id/btn_notepad"
+                android:layout_alignParentRight="true"
+                android:textSize="10dip"
+                android:text="@string/Rate"
+                android:background="@drawable/card_background_border"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/detalle_fecha_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btn_rate"
+                android:layout_below="@+id/detalle_titulo_evento"
+                android:textSize="15dip"
+
+                android:layout_margin="5dip"
+                android:text="viernes 21 de marzo"/>
+            <TextView
+                android:id="@+id/detalle_lugar_evento"
+                android:layout_below="@+id/detalle_fecha_evento"
+                android:layout_width="wrap_content"
+                android:layout_toLeftOf="@+id/btn_notepad"
+                android:width="160dip"
+                android:maxWidth="160dip"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:text="Salón Bombal AB ja jaj jaj ajajaja"
+                android:layout_marginLeft="5dip"
+                android:textSize="15dip"
+
+                android:layout_marginBottom="5dip"
+                />
+
+            <TextView
+                android:id="@+id/detalle_hora_evento"
+                android:layout_below="@+id/detalle_lugar_evento"
+
+                android:layout_height="wrap_content"
+
+                android:layout_width="match_parent"
+                android:paddingLeft="5dip"
+
+
+                android:paddingRight="5dip"
+                android:text="De 08:20 a 10:30 hrs"
+                android:textSize="13dip"
+
+                />
+            <View
+                android:id="@+id/separador"
+                android:layout_below="@+id/detalle_hora_evento"
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="#999999"
+                android:layout_margin="15dip"
+                />
+            <TextView
+                android:id="@+id/detalle_speaker_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separador"
+                android:text="Juanin Juan Harry"
+                android:paddingLeft="5dip"
+                android:layout_marginBottom="5dip"/>
+
+
+            <TextView
+                android:id="@+id/detalle_speaker_name_dos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detalle_speaker_name"
+                android:text="Expositor"
+                android:paddingLeft="5dip"
+                android:layout_marginBottom="5dip"/>
+            <TextView
+                android:id="@+id/detalle_speaker_name_tres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detalle_speaker_name_dos"
+                android:text="Juanin Juan Harry"
+                android:paddingLeft="5dip"
+                android:layout_marginBottom="5dip"/>
+            <TextView
+                android:id="@+id/detalle_speaker_name_cuatro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detalle_speaker_name_tres"
+                android:text="Juanin Juan Harry"
+                android:paddingLeft="5dip"
+                android:layout_marginBottom="5dip"/>
+            <TextView
+                android:id="@+id/detalle_speaker_name_extra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detalle_speaker_name_cuatro"
+                android:text="Expositor"
+                android:paddingLeft="5dip"
+                android:layout_marginBottom="5dip"/>
+            <TextView
+                android:id="@+id/detalle_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detalle_speaker_name_extra"
+                android:text="Descripcion de eventos"
+                android:paddingLeft="5dip"
+                android:paddingBottom="5dip"
+                />
+            <LinearLayout
+                android:id="@+id/content_map"
+                android:layout_width="150dip"
+                android:layout_height="200dip"
+                android:layout_below="@+id/detalle_descripcion"
+                android:padding="10dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/card_background_border">
+                <Utils.mMapImageView
+                    android:id="@+id/mapa_evento"
+                    android:layout_width="150dip"
+                    android:layout_height="200dip"
+
+
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="10dip"
+                    android:layout_alignParentLeft="true"/>
+                </LinearLayout>
+        </RelativeLayout>
+        </ScrollView>
+
+</RelativeLayout>

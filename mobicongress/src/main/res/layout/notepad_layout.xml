@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#012233">
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_marginBottom="3dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="5dip"
+        android:id="@+id/content_button_note_pad">
+
+        <ImageButton
+            android:id="@+id/cancel_note"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/card_background_border"
+            android:layout_alignParentRight="true"/>
+        <ImageButton
+            android:id="@+id/delete_note"
+            android:layout_toLeftOf="@+id/cancel_note"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/boton_basurero_inactivo"
+            android:scaleType="fitXY"
+            android:background="@drawable/card_background_border"
+            />
+        <ImageButton
+            android:id="@+id/save_note"
+            android:layout_toLeftOf="@+id/delete_note"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/boton_guardar_inactivo"
+            android:scaleType="fitXY"
+            android:background="@drawable/card_background_border"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="2dip"
+            android:layout_below="@+id/save_note"
+            android:background="#000"/>
+        </RelativeLayout>-->
+    <RelativeLayout
+
+        android:id="@+id/content_text_note_pad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/bottom_btn_note_pad">
+       <!-- <EditText
+            android:id="@+id/title_text_note_pad"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:hint="titulo de la nota"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:background="@null"
+            android:maxHeight="30dip"/>
+        <View
+            android:id="@+id/seprator_title"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/gray"
+            android:layout_below="@+id/title_text_note_pad"/>-->
+        <TextView
+            android:id="@+id/title_text_note_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:padding="10dip"
+            android:hint="titulo de la nota"
+            android:gravity="center"
+            android:lines="1"
+            android:background="@android:color/white"
+            android:maxHeight="30dip"/>
+        <View
+            android:id="@+id/seprator_title"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray"
+            android:layout_below="@+id/title_text_note_pad"/>
+        <EditText
+            android:layout_below="@+id/seprator_title"
+            android:id="@+id/text_note_pad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:hint="Ingrese contenido de la nota"
+            android:minHeight="200dip"
+            android:gravity="start"
+            android:scrollbars="vertical"
+            android:background="@android:color/white"/>
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bottom_btn_note_pad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="15dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="5dip"
+        >
+
+        <ImageButton
+            android:id="@+id/mail_note"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/card_background_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/boton_mail_inactivo"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dip"
+            android:layout_marginBottom="3dip"
+
+            />
+        <ImageButton
+            android:id="@+id/delete_note"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/card_background_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/boton_basurero_inactivo"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="3dip"
+            android:layout_marginBottom="3dip"
+
+            />
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>
+

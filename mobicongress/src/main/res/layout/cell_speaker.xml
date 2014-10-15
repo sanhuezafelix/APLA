@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_padre"
+        android:layout_marginTop="7dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="7dip"
+        >
+        <TextView
+            android:id="@+id/nombre_speaker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#343434"
+            android:typeface="sans"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:gravity="left"
+            android:text="I Congreso Internacional de Cirugia"
+            />
+
+        <TextView
+            android:id="@+id/lugar_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre_speaker"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:paddingTop="10dip"
+            android:paddingLeft="5dip"
+            android:paddingBottom="5dip"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Dr. juanito Rose"
+            android:layout_marginBottom="5dip"/>
+
+
+    </RelativeLayout>
+</FrameLayout>

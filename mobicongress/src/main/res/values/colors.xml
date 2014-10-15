@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#5B56E3</color>
+    <color name="orange"> #F26D1B</color>
+    <color name="grismenu">#404040</color>
+    <color name="grisclaro">#b1b1b1</color>
+	<color name="main_bg">#2b55aa</color>
+    <color name="label_bg">#1b3c80</color>
+	<color name="gray_header">#AAB5BD</color>
+	<color name="gray">#D5DADE</color>
+    <color name="segment_color">#2b55aa</color>
+    <color name="botom_bar_bg">#1b3c80</color>
+    <color name="evento_padre_bacground">#dd9580</color>
+    <color name="evento_extra_background">#dcdcdc</color>
+    <color name="evento_unico_background">#9acff1</color>
+
+</resources>

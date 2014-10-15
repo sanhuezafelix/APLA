@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_padres"
+
+
+        >
+        <RelativeLayout
+            android:id="@+id/contenedor_titulo_prg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="21dip">
+            <ImageView
+                android:id="@+id/fav_cell"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dip"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_fav_0"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/titulo_nieto_pgr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/fav_cell"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dip"
+                android:gravity="left"
+                android:text="I Congreso Internacional de Cirugia"
+                />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/hora_eem"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contenedor_titulo_prg"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:layout_marginLeft="30dip"
+                android:layout_gravity="center"
+                android:text="12:00 a 14:00"
+                android:textStyle="bold"
+                android:textColor="#000"
+
+
+                />
+
+
+
+
+        <!--<TextView
+            android:id="@+id/speaker_eem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/content_hora_nieto"
+            android:layout_below="@+id/contenedor_titulo_prg"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="5dip"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Dr. juanito Rose"/>-->
+        <TextView
+            android:id="@+id/lugar_eem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hora_eem"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginBottom="2dip"
+            android:text="Salon Bombal"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/speaker_uno_eem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lugar_eem"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:layout_marginLeft="30dip"
+            android:paddingBottom="2dip"
+            android:text="Juanin"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/speaker_dos_eem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_below="@+id/speaker_uno_eem"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:paddingBottom="2dip"
+            android:text="Juanin"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/speaker_extra_eem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_below="@+id/speaker_dos_eem"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:layout_marginBottom="5dip"
+            android:textColor="#000"
+            android:text="Juanin"/>
+
+    </RelativeLayout>
+</FrameLayout>

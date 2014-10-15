@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:background="#CED8F6">
+        <TextView
+            android:id="@+id/titulo_modulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modulo:modulo"
+            android:textStyle="bold"
+            android:padding="5dip"
+            android:textSize="15dip"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/hora_modulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modulo:modulo"
+            android:layout_below="@+id/titulo_modulo"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:padding="5dip"
+            android:textSize="15dip"
+            />
+        <TextView
+            android:id="@+id/fecha_modulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modulo:modulo"
+            android:layout_below="@+id/hora_modulo"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:padding="5dip"
+            android:textSize="15dip"
+            android:layout_marginBottom="10dip"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/fecha_modulo"
+            android:id="@+id/modulo_listview"
+            android:listSelector="#00000000"
+            android:divider="@null">
+            </ListView>
+        </RelativeLayout>
+</FrameLayout>

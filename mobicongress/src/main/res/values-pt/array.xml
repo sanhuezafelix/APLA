@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu">
+        <item>@string/Schedule</item>
+        <item>@string/News</item>
+        <item>@string/Speaker</item>
+        <item>@string/Maps</item>
+
+        <item>@string/Hotels</item>
+        <item>@string/chat</item>
+
+        <item>@string/Poster</item>
+        <item>@string/Sponsor</item>
+
+
+
+
+   <!--<item>@string/Download</item>
+        <item>@string/Summary_Book</item>
+       <item>@string/Accompanist</item>
+       <item>@string/Note_pad</item>
+       <item>@string/Poster</item>
+
+       <item>@string/Sponsor</item>-->
+
+
+
+    </string-array>
+
+    <string-array name="date_congress">
+
+        <item>2014-11-08</item>
+        <item>2014-11-09</item>
+        <item>2014-11-10</item>
+        <item>2014-11-11</item>
+    </string-array>
+    <string-array name="stand_category">
+        <item>Laboratorios</item>
+        <item>Equipos y Muebles</item>
+        <item>Alimentos</item>
+        <item>Ropa y Accesorios</item>
+        <item>Distribuidoras</item>
+        <item>Libros y Publicaciones</item>
+        <item>Instrumental</item>
+
+
+    </string-array>
+
+</resources>

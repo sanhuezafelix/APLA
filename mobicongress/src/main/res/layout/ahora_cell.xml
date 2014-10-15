@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/color_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dd9580"
+        >
+        <RelativeLayout
+            android:id="@+id/Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+
+            android:background="@android:color/white"
+            >
+            <TextView
+                android:id="@+id/title_padre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#dd9580"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dip"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text="Padre"
+                android:paddingBottom="5dip"
+
+                />
+
+            <TextView
+                android:id="@+id/titulo_nieto"
+                android:layout_below="@+id/title_padre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:typeface="sans"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:paddingLeft="10dip"
+                android:paddingTop="5dip"
+                android:gravity="left"
+                android:text="I Congreso Internacional de Cirugia"
+                />
+            <RelativeLayout android:id="@+id/content_hora_nieto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/titulo_nieto"
+                android:gravity="center_vertical"
+                android:layout_marginRight="5dip">
+
+                <TextView
+                    android:id="@+id/inicio_eem"
+                    android:layout_width="40dip"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center"
+                    android:text="12:00"
+
+                    />
+                <TextView
+                    android:id="@+id/fin_eem"
+                    android:layout_width="40dip"
+                    android:layout_height="20dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_gravity="center"
+                    android:text="12:00"
+                    android:layout_below="@+id/inicio_eem"
+
+
+                    />
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/speaker_eem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/content_hora_nieto"
+                android:layout_below="@+id/titulo_nieto"
+                android:gravity="left"
+                android:textSize="12dip"
+                android:paddingTop="10dip"
+                android:paddingBottom="5dip"
+                android:text="Dr. juanito Rose"/>
+            <TextView
+                android:id="@+id/lugar_eem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/content_hora_nieto"
+                android:layout_below="@+id/speaker_eem"
+                android:gravity="left"
+                android:textSize="12dip"
+                android:paddingBottom="5dip"
+                android:text="Salon Bombal"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

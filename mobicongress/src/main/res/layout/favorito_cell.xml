@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dip">
+
+<TextView
+    android:id="@+id/label_fav"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="jueves 3"
+    android:textSize="18dip"
+    android:textColor="#fff"
+    android:gravity="center"
+    android:background="@drawable/label_days_program"
+    android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_fav"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="10dip"
+
+        android:padding="5dip"
+        android:background="@drawable/card_background_border"
+        >
+        <ImageButton
+            android:id="@+id/btn_delete_fav"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Borrar"
+            android:gravity="center"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:background="@null"
+            />
+
+        <TextView
+            android:id="@+id/titulo_nieto_pgr"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_delete_fav"
+            android:textColor="#343434"
+            android:typeface="sans"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:gravity="left"
+            android:text="I Congreso Internacional de Cirugia"
+            />
+        <RelativeLayout android:id="@+id/content_hora_nieto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/titulo_nieto_pgr"
+            android:gravity="center_vertical"
+            android:layout_marginRight="5dip">
+
+            <TextView
+                android:id="@+id/inicio_eem"
+                android:layout_width="40dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:text="12:00"
+
+                />
+            <TextView
+                android:id="@+id/fin_eem"
+                android:layout_width="40dip"
+                android:layout_height="20dip"
+                android:layout_gravity="center"
+                android:layout_below="@+id/inicio_eem"
+
+                android:text="12:00"
+
+                />
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/speaker_eem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/content_hora_nieto"
+            android:layout_below="@+id/titulo_nieto_pgr"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="5dip"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Dr. juanito Rose"/>
+        <TextView
+            android:id="@+id/lugar_eem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/content_hora_nieto"
+            android:layout_below="@+id/speaker_eem"
+            android:gravity="left"
+            android:textSize="12dip"
+            android:paddingBottom="5dip"
+            android:text="Salon Bombal"/>
+
+    </RelativeLayout>
+</RelativeLayout>

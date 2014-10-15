@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:background="#fff"
+        >
+        <LinearLayout
+            android:id="@+id/image_cell_hotel"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/card_background_border"
+            android:padding="1dip">
+            <ImageView
+                android:id="@+id/icono_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/titulo_cell_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#343434"
+            android:textSize="14dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:paddingLeft="5dip"
+            android:layout_toLeftOf="@+id/image_cell_hotel"
+            android:text="05-03-2014"
+            android:paddingBottom="5dip"
+            />
+        <RelativeLayout
+            android:id="@+id/Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titulo_cell_hotel"
+            android:layout_toLeftOf="@+id/image_cell_hotel"
+            android:minHeight="70dip"
+            android:padding="5dip"
+            >
+            <TextView
+                android:id="@+id/direccion_cell_hotel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:typeface="sans"
+                android:textSize="14dip"
+                android:paddingTop="5dip"
+                android:text="I Congreso Internacional de Cirugia"
+                />
+            <TextView
+                android:id="@+id/mail_cell_hotel"
+                android:layout_below="@+id/direccion_cell_hotel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:typeface="sans"
+                android:textSize="14dip"
+                android:paddingTop="2dip"
+                android:text="I Congreso Internacional de Cirugia"
+                />
+            <TextView
+                android:id="@+id/telefono_cell_hotel"
+                android:layout_below="@+id/mail_cell_hotel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#343434"
+                android:typeface="sans"
+                android:textSize="14dip"
+                android:paddingTop="2dip"
+                android:text="I Congreso Internacional de Cirugia"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

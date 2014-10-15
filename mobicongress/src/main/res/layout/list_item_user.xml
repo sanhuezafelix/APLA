@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
+
+        android:id="@+id/content_user_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dip"
+        android:padding="10dip"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_user"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="5dip"
+            android:id="@+id/addCheckBox"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/userLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_image"
+
+            android:layout_marginRight="30dip"
+            android:textSize="18sp"
+            android:text="user_name"/>
+
+        <TextView
+            android:id="@+id/userCargo"
+            android:layout_below="@+id/userLogin"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:layout_marginRight="20dip"
+            android:text="user_country"/>
+
+        <TextView
+            android:id="@+id/userInstitution"
+            android:layout_below="@+id/userCargo"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="10sp"
+            android:layout_marginRight="20dip"
+            android:text="user_country"
+            android:layout_marginBottom="5dp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

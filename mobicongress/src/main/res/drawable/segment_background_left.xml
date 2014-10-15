@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape android:shape="rectangle"
+            android:dither="true">
+            <stroke android:color="#41bffc" android:width="4.5dip"></stroke>
+
+            <solid android:color="@android:color/transparent" />
+            />
+        </shape>
+    </item>
+    </layer-list><!-- From: file:/Users/luisgonzalez/Downloads/mCongress/IPVS/src/main/res/drawable/card_background.xml -->

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/navi_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/boton_bar">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4.5dp"
+            android:background="#41bffc"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+           />
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="false"
+            android:src="@drawable/navbar_izq"
+            android:paddingLeft="-4dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="false"
+            android:src="@drawable/navbar_der"
+            android:layout_alignParentRight="true"
+            android:paddingRight="-4dp" />
+
+      <!--  <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_bg"
+            android:src="@drawable/navbar_logo" />-->
+
+       <TextView
+           android:id="@+id/titulos_vistas"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="titulos"
+           android:gravity="center"
+           android:layout_centerVertical="true"
+           android:textSize="21dip"
+           android:visibility="gone"
+           android:textColor="#fff"
+           />
+
+
+        <Utils.SegmentedRadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/segment_btn"
+            android:checkedButton="@+id/button_one"
+            >
+            <RadioButton android:id="@+id/segment_button_one"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:minWidth="120dip"
+                android:minHeight="45dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginLeft="30dip"
+                android:text="@string/Now"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@color/radio_colors"
+                android:checked="true" />
+            <RadioButton android:id="@+id/segment_button_two"
+                android:minWidth="120dip"
+                android:minHeight="45dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="30dip"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="@string/Schedule"
+                android:button="@null"
+                android:gravity="center"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/radio_colors"
+                android:checked="false" />
+
+        </Utils.SegmentedRadioGroup>
+
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="1dip"
+            android:background="@null"
+           android:layout_marginRight="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_menu"
+            android:paddingLeft="-5dp"
+            android:layout_marginTop="-4dp" />
+
+
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="-4dp"
+            android:background="@null"
+
+
+            android:scaleType="centerInside"
+            android:src="@drawable/boton_busqueda"
+            android:layout_marginTop="-4dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bar_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="#e6ecec"
+         >
+        <ImageView
+            android:id="@+id/barra_botom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/barra_botombar"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dip"
+            android:background="#000">
+            <ImageButton
+                android:id="@+id/btn_fav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dip"
+                android:background="@null"
+                android:scaleType="center"
+                android:src="@drawable/btn_fav_view" />
+            <ImageButton
+                android:id="@+id/btn_stand_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dip"
+                android:background="@null"
+                android:scaleType="center"
+                android:visibility="gone"
+                android:src="@drawable/icon_stand" />
+            <ImageView
+                android:id="@+id/publicidad_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/publicidad_abajo1"
+                android:padding="2dip"
+                android:layout_centerHorizontal="true"/>
+
+            <RadioGroup
+                android:id="@+id/radio_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:checkedButton="@+id/users"
+                android:visibility="gone">
+                <RadioButton
+                    android:id="@+id/users"
+                    android:layout_width="34dip"
+                    android:layout_height="34dip"
+                    android:button="@null"
+                    android:background="@drawable/segment_radio_chat_center"
+                    android:textAlignment="center"
+                    />
+                <RadioButton
+                    android:id="@+id/rooms"
+                    android:layout_width="34dip"
+                    android:layout_height="34dip"
+                    android:layout_marginRight="90dip"
+                    android:layout_marginLeft="90dip"
+                    android:button="@null"
+                    android:background="@drawable/segment_radio_chat_left"
+                    />
+                <RadioButton
+                    android:id="@+id/dialogs"
+                    android:layout_width="34dip"
+                    android:layout_height="34dip"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/segment_radio_chat_rigth"
+
+                    />
+
+            </RadioGroup>
+
+            </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/navi_bar"
+        android:background="#e6ecec" />
+
+
+
+</RelativeLayout>

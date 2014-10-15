@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/evento_unico_background">
+
+    <RelativeLayout
+        android:id="@+id/scroll_extra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:padding="10dip"
+        android:scrollbars="vertical"
+        android:background="#fff">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titulo_extra_cnt">
+            <TextView
+                android:id="@+id/titulo_evento_extra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titulo Evento"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:textSize="18dip"
+                android:layout_toLeftOf="@+id/btn_fv_extra" />
+            <ImageButton
+                android:id="@+id/btn_fv_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_fav_0"
+                android:scaleType="fitXY"
+                android:background="@null" />
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_notepad"
+            android:layout_below="@+id/titulo_extra_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/divider"
+            android:textColor="@color/blue"
+            android:src="@drawable/boton_notas_activo"
+            android:background="@null"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/fecha_evento_extra"
+            android:layout_below="@+id/titulo_extra_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:maxWidth="150dip"
+            android:text="24 de marzo"
+            />
+
+
+        <TextView
+            android:id="@+id/hora_evento_extra"
+            android:layout_below="@+id/fecha_evento_extra"
+            android:layout_toLeftOf="@+id/btn_notepad"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="15dip"
+            android:maxWidth="150dip"
+            android:text="24 de marzo"
+            android:layout_marginEnd="5dip"/>
+        <TextView
+            android:id="@+id/lugar_evento_extra"
+            android:layout_below="@+id/hora_evento_extra"
+            android:layout_toLeftOf="@+id/btn_notepad"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="15dip"
+            android:maxWidth="150dip"
+            android:text="24 de marzo"
+            android:layout_marginEnd="5dip"/>
+        <View
+            android:id="@+id/divider"
+            android:layout_marginTop="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_below="@id/lugar_evento_extra"
+            android:background="#999999"/>
+        <TextView
+            android:id="@+id/detalle_speaker_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:text="Juanin Juan Harry"
+            android:paddingLeft="5dip"
+            android:layout_marginBottom="5dip"/>
+
+        <TextView
+            android:id="@+id/detalle_speaker_name_dos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detalle_speaker_name"
+            android:text="Expositor"
+            android:paddingLeft="5dip"
+            android:layout_marginBottom="5dip"/>
+        <TextView
+            android:id="@+id/detalle_speaker_name_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detalle_speaker_name_dos"
+            android:text="Expositor"
+            android:paddingLeft="5dip"
+            android:layout_marginBottom="5dip"/>
+
+        <LinearLayout
+            android:id="@+id/content_map"
+            android:layout_width="150dip"
+            android:layout_height="250dip"
+            android:layout_below="@+id/detalle_speaker_name_extra"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/card_background_border"
+            android:layout_marginTop="10dip"
+            android:padding="3dip">
+            <Utils.mMapImageView
+                android:id="@+id/mapa_detalle_extra"
+                android:layout_width="147dip"
+                android:layout_height="247dip"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:id="@+id/content_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dip"
+        android:layout_margin="10dip"
+        android:padding="10dip"
+        android:background="@drawable/card_background_border_selected"
+        >
+        <TextView
+            android:id="@+id/fecha_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginBottom="1dip"
+            android:text="Titulo"
+            android:textSize="13dip"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_below="@+id/fecha_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background_border"
+            android:layout_margin="5dip"
+            android:padding="5dip">
+            <TextView
+                android:id="@+id/titulo_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="Este es un texto de prueba"
+                android:textSize="15dip"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/contenido_news"
+                android:layout_below="@+id/titulo_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="Este es un texto de prueba"
+                android:textSize="13dip"
+                android:textStyle="bold"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

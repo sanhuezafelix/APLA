@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CustomLibrary/HeaderListView/HeaderListView.iml" filepath="$PROJECT_DIR$/CustomLibrary/HeaderListView/HeaderListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PLANTILLA_V_21.iml" filepath="$PROJECT_DIR$/PLANTILLA_V_21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomLibrary/SlideMenu/SlideMenu.iml" filepath="$PROJECT_DIR$/CustomLibrary/SlideMenu/SlideMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobicongress/mobicongress.iml" filepath="$PROJECT_DIR$/mobicongress/mobicongress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomLibrary/pull-to-refresh/pull-to-refresh.iml" filepath="$PROJECT_DIR$/CustomLibrary/pull-to-refresh/pull-to-refresh.iml" />
+    </modules>
+  </component>
+</project>
+
